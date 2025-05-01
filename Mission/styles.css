@@ -1,0 +1,54 @@
+/* Base Styles */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .dark {
+    background-color: #333;
+    color: white;
+  }
+  .dark h2 {
+    color: rgb(160, 212, 237);
+  }
+  .content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .title h1,
+  .title h2 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .title h2 {
+    color: #006EB6;
+    margin-top: 10px;
+  }
+  
+  main p {
+    text-align: left;
+  }
+  
+  .does-list {
+    padding-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
