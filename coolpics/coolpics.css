@@ -121,3 +121,76 @@ h2 {
     margin: 10px; /* Adds space between images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
+/* Hide helper */
+.hide {
+  display: none;
+}
+
+/* Menu button and responsive menu */
+#menu-button {
+  display: none;
+  background-color: #333;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Small screens */
+@media (max-width: 1000px) {
+  #menu-button {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menu.show {
+    display: block;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1001px) {
+  #menu-button {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+/* Modal styles */
+dialog#image-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+dialog#image-viewer img {
+  display: block;
+  margin: 20vh auto;
+  width: 90%;
+  max-height: 100%;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
