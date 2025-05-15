@@ -73,10 +73,13 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     padding: 1rem;
+    justify-content: center;
 }
 
 figure {
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -118,7 +121,6 @@ h2 {
 .gallery img {
     border: 5px solid white; /* White frame around each image */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Shadow on the right and bottom */
-    margin: 10px; /* Adds space between images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 /* Hide helper */
@@ -163,6 +165,16 @@ h2 {
     gap: 1em;
   }
 }
+
+/* Center menu button on small screens */
+@media (max-width: 1000px) {
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}
+
 
 /* Modal styles */
 dialog#image-viewer {
