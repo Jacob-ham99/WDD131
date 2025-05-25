@@ -123,10 +123,6 @@ nav ul li a:focus {
   /* flex-direction: column; */
 }
 
-.details .rating {
-  color: #EFC69B; /* Gold stars */
-}
-
 /* Right column: article content */
 .content {
   color: #473144;
