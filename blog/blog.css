@@ -1,0 +1,175 @@
+/* Import Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* General Styles */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #473144; /* Dark color */
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+  color: #473144;
+  margin-top: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  color: #AF1B3F; /* Red color */
+  margin-top: 0;
+}
+
+a {
+  color: #EFC69B; /* Gold color */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #AF1B3F;
+  text-decoration: underline;
+}
+
+/* Skip to content link */
+.skiptocontent a {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skiptocontent a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background: #AF1B3F;
+  color: white;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/* Header styling with bottom border */
+header {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  color: #473144;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation grid: 3 fixed columns, aligned right */
+nav ul {
+  display: grid;
+  grid-template-columns: 80px 90px 70px;
+  justify-content: right;
+  justify-items: end;
+  gap: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+nav {
+  border-top: 2px solid #EFC69B; /* Gold/yellow line */
+  padding-top: 0.5rem;
+  border-bottom: 2px solid #EFC69B;
+}
+
+nav ul li a {
+  color: #AF1B3F;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+/* Main page layout: articles left (3fr), filters right (1fr) */
+.content-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* Filters sidebar: right column */
+.filters {
+  text-align: center;
+}
+
+/* Each article: details left (1fr), content right (3fr) */
+.articles article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Left column: article details */
+.details {
+  text-align: left;
+  color: #473144;
+  font-size: 0.9rem;
+  /* flex-direction: column; */
+}
+
+.details .rating {
+  color: #EFC69B; /* Gold stars */
+}
+
+/* Right column: article content */
+.content {
+  color: #473144;
+}
+
+.content h2 {
+  color: #AF1B3F;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.content img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: 2.5rem;
+}
+
+.content p {
+  margin-top: 0;
+  text-align: left;
+}
+
+.content a {
+  color: #AF1B3F;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.content a:hover,
+.content a:focus {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #473144;
+  color: #EFC69B;
+  margin-top: 2rem;
+}
